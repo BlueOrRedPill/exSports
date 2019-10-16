@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_left_menu">
+
+    <!--<ImageView android:layout_width="match_parent" android:layout_height="match_parent"-->
+    <!--android:src="@drawable/bg_left_menu"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:adjustViewBounds="true"/>-->
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingEnd="5dp"
+                  android:layout_marginTop="@dimen/size_15"
+                  android:layout_marginBottom="@dimen/size_15">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingTop="@dimen/size_20"
+                      android:paddingBottom="@dimen/size_20"
+                      android:paddingStart="@dimen/size_15"
+                      android:paddingEnd="@dimen/size_15">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ex_profile_image"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#00000000"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="@dimen/size_10">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Ekachau Sungsup"
+                        android:id="@+id/name_txt"
+                          android:textColor="@android:color/white"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="ekachai@elite-boxing.com"
+                          android:textColor="@color/white_50"
+                        android:id="@+id/email_txt"
+                          android:textSize="@dimen/text_12"
+                          android:fontFamily="@font/opensans_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:paddingTop="@dimen/size_20"
+                      android:paddingBottom="@dimen/size_20"
+                      android:paddingStart="@dimen/size_15"
+                      android:paddingEnd="@dimen/size_15"
+                      android:gravity="center_horizontal|bottom"
+                      android:background="#11ffffff">
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Balance"
+                          android:textSize="@dimen/text_12"
+                          android:textColor="@android:color/white"
+                          android:fontFamily="@font/opensans_regular"/>
+                <TextView
+                        android:id="@+id/balance_coin"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:drawableStart="@drawable/ic_excoin"
+                          android:drawablePadding="@dimen/size_05"
+                          tools:text="300"
+                          android:gravity="center_vertical"
+                          android:textSize="20sp"
+                          android:textColor="@android:color/white"
+                          android:fontFamily="@font/opensans_bold"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/buy_token_btn"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:background="@drawable/bg_white_corner"
+                      android:padding="@dimen/size_10"
+                      android:text="BUY EXS TOKEN"
+                      android:textSize="@dimen/text_12"
+                      android:fontFamily="@font/opensans_bold"
+                      android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingTop="@dimen/size_20"
+                          android:paddingBottom="@dimen/size_20"
+                          android:paddingStart="@dimen/size_15"
+                          android:paddingEnd="@dimen/size_15"
+                          android:gravity="center">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/text_14"
+                          android:text="Notification"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textColor="@color/white_50"/>
+                <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginStart="@dimen/size_15"
+                  android:background="@color/white_50"/>
+            <LinearLayout
+                    android:id="@+id/change_pass_btn"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingTop="@dimen/size_20"
+                          android:paddingBottom="@dimen/size_20"
+                          android:paddingStart="@dimen/size_15"
+                          android:paddingEnd="@dimen/size_15"
+                          android:gravity="center">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/text_14"
+                          android:text="Change Password"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textColor="@color/white_50"/>
+
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginStart="@dimen/size_15"
+                  android:background="@color/white_50"/>
+            <LinearLayout
+                    android:id="@+id/privacy_btn"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingTop="@dimen/size_20"
+                          android:paddingBottom="@dimen/size_20"
+                          android:paddingStart="@dimen/size_15"
+                          android:paddingEnd="@dimen/size_15"
+                          android:gravity="center">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/text_14"
+                          android:text="Privacy Policy"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textColor="@color/white_50"/>
+
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginStart="@dimen/size_15"
+                  android:background="@color/white_50"/>
+            <LinearLayout
+                    android:id="@+id/term_btn"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingTop="@dimen/size_20"
+                          android:paddingBottom="@dimen/size_20"
+                          android:paddingStart="@dimen/size_15"
+                          android:paddingEnd="@dimen/size_15"
+                          android:gravity="center">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:textSize="@dimen/text_14"
+                          android:text="Terms and Conditions"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textColor="@color/white_50"/>
+
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:layout_marginStart="@dimen/size_15"
+                  android:background="@color/white_50"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

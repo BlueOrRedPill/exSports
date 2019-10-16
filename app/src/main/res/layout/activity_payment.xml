@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_content">
+
+
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size_15"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:gravity="center">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                              android:orientation="vertical"
+                              android:layout_margin="@dimen/size_05"
+                              android:gravity="center">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                            android:background="@drawable/bg_white_corner"
+                                  android:gravity="center"
+                                  android:padding="@dimen/size_10"
+                            android:layout_margin="@dimen/size_05">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:padding="@dimen/size_05"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:textSize="@dimen/text_14"
+                                  android:textColor="@color/white_50"
+                                  android:text="HOW MANY EXS DO YOU WANT?"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:background="@drawable/bg_white_corner"
+                                      android:layout_margin="@dimen/size_05"
+                                      android:padding="@dimen/size_10"
+                                      android:gravity="center">
+                            <EditText
+                                    android:id="@+id/price_edt"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textAlignment="textEnd"
+                                    android:inputType="number"
+                                    android:imeOptions="actionDone"
+                                    android:background="@android:color/transparent"
+                                  android:hint="0"
+                                    android:textColorHint="@color/white_50"
+                                    android:textColor="@android:color/white"
+                                    android:fontFamily="@font/opensans_bold"
+                                    android:textSize="@dimen/text_16"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/ic_excoin"
+                                    android:drawablePadding="@dimen/size_05"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/text_14"
+                                    android:text="EXS"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:textColor="@android:color/white"
+                                    android:layout_margin="@dimen/size_05"/>
+                        </LinearLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:paddingEnd="@dimen/size_10"
+                                  android:gravity="end"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:textSize="@dimen/text_12"
+                                  android:textColor="@color/white_50"
+                                  android:text="USD $50.00"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                                  android:orientation="vertical"
+                            android:layout_weight="1"
+                                  android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/size_05"
+                                  android:background="@drawable/bg_white_corner">
+
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                                      android:orientation="vertical"
+                                      android:padding="@dimen/size_10"
+                                      android:gravity="center">
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                      android:padding="@dimen/size_05"
+                                      android:fontFamily="@font/opensans_regular"
+                                      android:textSize="@dimen/text_14"
+                                      android:textColor="@color/white_50"
+                                      android:text="PAYMENT METHOD"/>
+
+<!--                                <LinearLayout android:layout_width="match_parent"-->
+<!--                                              android:layout_height="wrap_content"-->
+<!--                                              android:orientation="horizontal"-->
+<!--                                              android:padding="@dimen/size_10"-->
+<!--                                              android:gravity="center">-->
+
+<!--                                    <CheckBox android:layout_width="0dp"-->
+<!--                                                 android:layout_height="wrap_content"-->
+<!--                                                 android:layout_weight="1"-->
+<!--                                                 android:button="@drawable/radio_selector"-->
+<!--                                                 android:checked="true"-->
+<!--                                                 android:gravity="center_vertical"-->
+<!--                                                 android:padding="@dimen/size_10"-->
+<!--                                                 android:text="Pay with EOS"-->
+<!--                                                 android:textColor="@android:color/white"-->
+<!--                                                 android:textSize="@dimen/text_14"/>-->
+
+<!--                                    &lt;!&ndash;<ImageView android:layout_width="30dp" android:layout_height="30dp"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:src="@drawable/ic_check"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:scaleType="fitCenter"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:adjustViewBounds="true"/>&ndash;&gt;-->
+<!--                                    &lt;!&ndash;<TextView android:layout_width="0dp"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:padding="@dimen/size_05"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:text="Pay with EOS"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:fontFamily="@font/opensans_regular"&ndash;&gt;-->
+<!--                                    &lt;!&ndash;android:textColor="@android:color/white"/>&ndash;&gt;-->
+<!--                                    <ImageView android:layout_width="30dp" android:layout_height="30dp"-->
+<!--                                               android:src="@drawable/ic_eos"-->
+<!--                                               android:scaleType="fitCenter"-->
+<!--                                               android:adjustViewBounds="true"/>-->
+<!--                                </LinearLayout>-->
+
+                                <LinearLayout android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="horizontal"
+                                              android:padding="@dimen/size_10"
+                                              android:gravity="center">
+                                    <CheckBox android:layout_width="0dp"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_weight="1"
+                                                 android:button="@drawable/radio_selector"
+                                                 android:gravity="center_vertical"
+                                            android:checked="true"
+                                            android:enabled="false"
+                                                 android:padding="@dimen/size_10"
+                                                 android:text="Credit Card"
+                                                 android:textColor="@android:color/white"
+                                                 android:textSize="@dimen/text_14"/>
+                                    <!--<ImageView android:layout_width="30dp" android:layout_height="30dp"-->
+                                    <!--android:src="@drawable/ic_uncheck"-->
+                                    <!--android:scaleType="fitCenter"-->
+                                    <!--android:adjustViewBounds="true"/>-->
+                                    <!--<TextView android:layout_width="0dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_weight="1"-->
+                                    <!--android:padding="@dimen/size_05"-->
+                                    <!--android:text="Credit Card"-->
+                                    <!--android:fontFamily="@font/opensans_regular"-->
+                                    <!--android:textColor="@android:color/white"/>-->
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="30dp"
+                                               android:src="@drawable/ic_credit_card"
+                                               android:scaleType="fitCenter"
+                                               android:adjustViewBounds="true"/>
+                                </LinearLayout>
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_margin="@dimen/size_10"
+                                          android:orientation="vertical"
+                                          android:background="@drawable/bg_white_corner">
+                                <LinearLayout android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical"
+                                              android:padding="@dimen/size_10"
+                                              android:gravity="center">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="Card Number"
+                                              android:textSize="@dimen/text_10"
+                                              android:textColor="@color/white_50"
+                                              android:fontFamily="@font/opensans_regular"/>
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="8465 - 6892 - 0852 - 2452"
+                                              android:textSize="@dimen/text_14"
+                                              android:textColor="@android:color/white"
+                                              android:fontFamily="@font/opensans_regular"/>
+                                </LinearLayout>
+                                <View android:layout_width="match_parent" android:layout_height="1px"
+                                      android:background="@color/white_50"/>
+                                <LinearLayout android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="horizontal">
+                                    <LinearLayout android:layout_width="0dp"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_weight="1"
+                                                  android:orientation="vertical"
+                                                  android:padding="@dimen/size_10"
+                                                  android:gravity="center">
+                                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                  android:text="Expire Date"
+                                                  android:textSize="@dimen/text_10"
+                                                  android:textColor="@color/white_50"
+                                                  android:fontFamily="@font/opensans_regular"/>
+                                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                  android:text="04 / 2030"
+                                                  android:textSize="@dimen/text_14"
+                                                  android:textColor="@android:color/white"
+                                                  android:fontFamily="@font/opensans_regular"/>
+                                    </LinearLayout>
+                                    <View android:layout_width="1px" android:layout_height="match_parent"
+                                          android:background="@color/white_50"/>
+                                    <LinearLayout android:layout_width="0dp"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_weight="1"
+                                                  android:orientation="vertical"
+                                                  android:padding="@dimen/size_10"
+                                                  android:gravity="center">
+                                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                  android:text="Security Code"
+                                                  android:textSize="@dimen/text_10"
+                                                  android:textColor="@color/white_50"
+                                                  android:fontFamily="@font/opensans_regular"/>
+                                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                  android:text="526"
+                                                  android:textSize="@dimen/text_14"
+                                                  android:textColor="@android:color/white"
+                                                  android:fontFamily="@font/opensans_regular"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View android:layout_width="match_parent" android:layout_height="1px"
+                                      android:background="@color/white_50"/>
+                                <LinearLayout android:layout_width="match_parent"
+                                              android:layout_height="wrap_content"
+                                              android:orientation="vertical"
+                                              android:padding="@dimen/size_10"
+                                              android:gravity="center">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="Name on Card"
+                                              android:textSize="@dimen/text_10"
+                                              android:textColor="@color/white_50"
+                                              android:fontFamily="@font/opensans_regular"/>
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                              android:text="EKACHAI"
+                                              android:textSize="@dimen/text_14"
+                                              android:textColor="@android:color/white"
+                                              android:fontFamily="@font/opensans_regular"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                    android:id="@+id/confirm_btn"
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/bg_red_corner"
+                                    android:padding="@dimen/size_10"
+                                    android:layout_marginStart="@dimen/size_05"
+                                    android:layout_marginEnd="@dimen/size_05"
+                                    android:layout_marginTop="@dimen/size_10"
+                                    android:layout_marginBottom="@dimen/size_10"
+                                    android:gravity="center">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                        android:text="CONTINUE"
+                                        android:textSize="@dimen/text_14"
+                                        android:padding="@dimen/size_05"
+                                        android:textColor="@android:color/white"
+                                        android:fontFamily="@font/opensans_bold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/content_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:indeterminateTint="@android:color/white"
+            style="@style/Widget.AppCompat.ProgressBar"/>
+</FrameLayout>

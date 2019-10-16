@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_content">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_10"
+            android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+            <ImageView
+                    android:id="@+id/img_card_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ex_collection_7"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_margin="@dimen/size_05"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="@dimen/text_10"
+                        android:textColor="@color/white_50"
+                        android:text="Suggested Price: "/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textSize="@dimen/text_10"
+                        android:textColor="@android:color/white"
+                        android:text="800-1,200 EXS"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_white_corner"
+                    android:padding="@dimen/size_10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_15"
+                    android:layout_marginBottom="@dimen/size_15"
+                    android:layout_marginStart="@dimen/size_20"
+                    android:layout_marginEnd="@dimen/size_20"
+                    android:gravity="center">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size_10"
+                        android:gravity="center">
+                    <TextView android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Do you want to sale ?"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:padding="@dimen/size_05"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="@dimen/size_10"
+                                android:gravity="center">
+                            <TextView
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:text="ASKING PRICE (FOR 1CARD)"
+                                    android:textSize="@dimen/text_12"
+                                    android:padding="@dimen/size_05"
+                                    android:textColor="@android:color/white"
+                                    android:fontFamily="@font/opensans_regular"/>
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:padding="@dimen/size_05"
+                                    android:background="@drawable/bg_white_corner">
+                                <EditText
+                                        android:id="@+id/price_edt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="@dimen/size_05"
+                                        android:textSize="@dimen/text_16"
+                                        android:hint="0"
+                                        android:textColorHint="@color/white_50"
+                                        android:textAlignment="textEnd"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberDecimal"
+                                        android:textColor="@android:color/white"
+                                        android:fontFamily="@font/opensans_bold"
+                                        android:background="@android:color/transparent"/>
+                                <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_excoin"
+                                        android:layout_margin="@dimen/size_05"
+                                        android:scaleType="fitCenter"
+                                        android:adjustViewBounds="true"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp"
+                                android:padding="@dimen/size_05"
+                                android:gravity="center">
+
+                            <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/size_05"
+                                    android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="QUANTITY"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/text_10"
+                                        android:textColor="@color/white_50"
+                                        android:fontFamily="@font/opensans_regular"/>
+                                <TextView android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="AVAILABLE : 15 CARDS"
+                                        android:gravity="center"
+                                        android:textSize="@dimen/text_10"
+                                        android:textColor="@android:color/white"
+                                        android:fontFamily="@font/opensans_regular"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                <ImageView
+                                        android:id="@+id/minus_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_minus"
+                                        android:scaleType="fitCenter"
+                                        android:adjustViewBounds="true"/>
+                                <TextView
+                                    android:id="@+id/qty_txt"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="0"
+                                        android:textColor="@android:color/white"
+                                        android:fontFamily="@font/opensans_bold"
+                                        android:textSize="@dimen/text_16"/>
+                                <ImageView
+                                        android:id="@+id/plus_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_plus"
+                                        android:scaleType="fitCenter"
+                                        android:adjustViewBounds="true"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/confirm_btn"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_red_corner"
+                        android:layout_margin="@dimen/size_05"
+                        android:padding="@dimen/size_10"
+                        android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="NEXT"
+                            android:textSize="@dimen/text_14"
+                            android:padding="@dimen/size_05"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

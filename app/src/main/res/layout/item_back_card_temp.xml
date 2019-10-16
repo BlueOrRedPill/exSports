@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+    <RelativeLayout android:layout_width="380dp" android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:id="@+id/bg_background_card"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:paddingStart="20dp"
+                  android:paddingEnd="20dp"
+                  android:paddingTop="60dp"
+                  android:paddingBottom="60dp"
+                  android:layout_alignEnd="@+id/bg_card"
+                  android:layout_alignBottom="@+id/bg_card"
+                  android:layout_alignStart="@+id/bg_card"
+                  android:layout_alignTop="@+id/bg_card">
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="@android:color/white"
+                app:tabMode="fixed"
+                app:tabIndicatorColor="@color/red_indicator"
+                android:background="#8f111111">
+
+            <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                                                      android:layout_height="0dp"
+                                                      android:text="Card Info"/>
+            <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                                                      android:layout_height="0dp"
+                                                      android:text="Transaction"/>
+        </com.google.android.material.tabs.TabLayout>
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <include android:id="@+id/info_content" layout="@layout/item_card_info"
+                     android:visibility="visible"/>
+            <include android:id="@+id/transaction_content" layout="@layout/item_card_transaction"
+                     android:visibility="gone"/>
+        </FrameLayout>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

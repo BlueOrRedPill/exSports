@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:padding="15dp"
+                      android:gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="bottom">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center">
+                    <ImageView
+                            android:id="@+id/card_in_user_image"
+                            android:layout_width="50dp" android:layout_height="50dp"
+                            android:src="@drawable/ex_profile_image"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"/>
+                    <TextView
+                            android:id="@+id/card_in_user_name"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="NAME"
+                            android:maxLength="10"
+                            android:layout_margin="@dimen/size_05"
+                            android:textSize="@dimen/text_14"
+                            android:fontFamily="@font/opensans_bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <ImageView android:layout_width="150dp" android:layout_height="wrap_content"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"
+                           android:src="@drawable/img_send_to"
+                           android:layout_marginBottom="50dp"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center">
+                    <ImageView
+                            android:id="@+id/card_out_user_image"
+                            android:layout_width="50dp" android:layout_height="50dp"
+                            android:src="@drawable/ex_profile_image"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"/>
+                    <TextView
+                            android:id="@+id/card_out_user_name"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="NAME"
+                            android:maxLength="10"
+                            android:layout_margin="@dimen/size_05"
+                            android:textSize="@dimen/text_14"
+                            android:fontFamily="@font/opensans_bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:layout_margin="@dimen/size_05"
+                              android:gravity="center"
+                              android:orientation="vertical">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+                                 android:layout_weight="1">
+                        <ImageView
+                                android:id="@+id/card_in_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.8"
+                                android:padding="18dp"
+                                android:rotation="345"
+                                android:src="@drawable/v01"
+                                android:scaleType="fitXY"
+                                android:adjustViewBounds="true"/>
+                        <ImageView
+                                android:id="@+id/card_in"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="18dp"
+                                android:src="@drawable/m01"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"/>
+                    </FrameLayout>
+                    <TextView
+                            android:id="@+id/card_in_count"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="1 Cards"
+                              android:padding="@dimen/size_10"
+                              android:textColor="@color/red_indicator"
+                              android:textSize="@dimen/text_12"
+                              android:fontFamily="@font/opensans_bold"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:layout_margin="@dimen/size_05"
+                              android:gravity="center"
+                              android:orientation="vertical">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+                                 android:layout_weight="1">
+                        <ImageView
+                                android:id="@+id/card_out_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.8"
+                                android:padding="18dp"
+                                android:rotation="345"
+                                android:src="@drawable/v01"
+                                android:scaleType="fitXY"
+                                android:adjustViewBounds="true"/>
+                        <ImageView
+                                android:id="@+id/card_out"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="18dp"
+                                android:src="@drawable/m01"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"/>
+                    </FrameLayout>
+                    <TextView
+                            android:id="@+id/card_out_count"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="1 Cards"
+                              android:padding="@dimen/size_10"
+                              android:textColor="@color/red_indicator"
+                              android:textSize="@dimen/text_12"
+                              android:fontFamily="@font/opensans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView android:layout_width="150dp" android:layout_height="wrap_content"
+                       android:src="@drawable/img_recieve_form"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_red_corner"
+                android:layout_marginTop="@dimen/size_15"
+                android:layout_marginBottom="@dimen/size_15"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="@dimen/size_10"
+                android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="CONFIRM"
+                      android:textSize="@dimen/text_14"
+                      android:padding="@dimen/size_05"
+                      android:textColor="@android:color/white"
+                      android:fontFamily="@font/opensans_bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

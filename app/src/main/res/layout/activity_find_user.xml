@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingTop="@dimen/size_10"
+                  android:paddingBottom="@dimen/size_10"
+                  android:paddingStart="@dimen/size_15"
+                  android:paddingEnd="@dimen/size_15"
+                  android:gravity="center"
+                  android:background="#88111111">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:background="@drawable/bg_white_alpha_corner"
+                      android:padding="@dimen/size_10">
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       app:srcCompat="@drawable/ic_search_white"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"/>
+
+
+            <EditText android:id="@+id/search_edt"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:padding="@dimen/size_05"
+                      android:background="@android:color/transparent"
+                      android:hint="Search"
+                      android:inputType="text"
+                      android:imeOptions="actionDone"
+                      android:textColorHint="@color/white_50"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_14"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+                 android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:background="#111111"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

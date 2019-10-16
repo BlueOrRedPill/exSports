@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/img_card_buy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/size_10"
+                        android:adjustViewBounds="true"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ex_collection_7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/size_20"
+                        android:layout_marginTop="@dimen/size_15"
+                        android:layout_marginEnd="@dimen/size_20"
+                        android:layout_marginBottom="@dimen/size_15"
+                        android:background="@drawable/bg_white_corner"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:id="@+id/sell_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/black_30"
+                            android:orientation="vertical"
+                            android:padding="@dimen/size_20">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:text="Card:"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                    android:id="@+id/name_text"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:gravity="end|center_vertical"
+                                    android:text="BUAKAW BANCHAMEK"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:text="Price:"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:gravity="end|center_vertical"
+                                    android:text="1000 EXS"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:text="Quantity:"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:gravity="end|center_vertical"
+                                    android:text="2"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:text="Service Fee:"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:gravity="end|center_vertical"
+                                    android:text="50 exs"
+                                    android:textColor="@color/white_50"
+                                    android:textSize="@dimen/text_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_bold"
+                                    android:text="You'll Earn:"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_12" />
+
+                            <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/opensans_bold"
+                                    android:gravity="end|center_vertical"
+                                    android:text="950 EXS"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_12" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/size_20">
+
+                        <TextView
+                                android:id="@+id/info_message_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:gravity="center"
+                                android:text="Do you really want to sell this card ?"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_14" />
+
+                        <TextView
+                                android:id="@+id/message_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/confirm_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_15"
+                            android:background="@drawable/bg_red_corner"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/size_10">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:padding="@dimen/size_05"
+                                android:text="CONFIRM"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/content_loading"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#00111111">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="@dimen/size_10"
+                  android:gravity="center">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical">
+            <ImageView android:layout_width="40dp" android:layout_height="40dp"
+                       android:src="@drawable/ex_profile_image"
+                       android:scaleType="fitCenter"
+                       android:layout_marginStart="@dimen/size_10"
+                       android:layout_marginEnd="@dimen/size_10"
+                       android:layout_marginTop="@dimen/size_05"
+                       android:layout_marginBottom="@dimen/size_05"
+                       android:adjustViewBounds="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="David"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_14"
+                      android:fontFamily="@font/opensans_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical|end">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_excoin"
+                       android:scaleType="fitCenter"
+                       android:adjustViewBounds="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="100 EXS"
+                      android:textColor="@android:color/white"
+                      android:textSize="@dimen/text_14"
+                      android:fontFamily="@font/opensans_bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/line_color"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11000000"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_10"
+            android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/size_05"
+                      android:padding="@dimen/size_10"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:background="@drawable/bg_white_corner">
+
+            <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_margin="@dimen/size_05"
+                    android:src="@drawable/b01"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="3"
+                          android:orientation="vertical"
+                          android:gravity="center">
+                <TextView
+                        android:id="@+id/name_txt"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_16"
+                        android:padding="@dimen/size_05"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="NAME"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:padding="@dimen/size_05">
+                    <TextView
+                            android:id="@+id/id_txt"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_12"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="CARD ID"/>
+                    <TextView
+                            android:id="@+id/skill_txt"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_12"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="CARD ID"/>
+                    <TextView   android:id="@+id/sport_txt"
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_12"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="CARD ID"/>
+                    <TextView
+                            android:id="@+id/event_txt"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_12"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="CARD ID"/>
+                    <TextView
+                            android:id="@+id/country_txt"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_12"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="CARD ID"/>
+                </LinearLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:padding="@dimen/size_05"
+                          android:textSize="@dimen/text_16"
+                          android:gravity="center_vertical"
+                          android:textColor="@android:color/white"
+                          android:fontFamily="@font/opensans_bold"
+                          android:drawableStart="@drawable/ic_excoin"
+                          android:drawablePadding="@dimen/size_05"
+                          android:text="100 EXS"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+             android:layout_margin="@dimen/size_05"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </LinearLayout>
+
+</LinearLayout>

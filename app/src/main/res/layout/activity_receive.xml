@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_content">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_05">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_black_corner_30"
+                    android:layout_margin="@dimen/size_05"
+                    android:padding="@dimen/size_10">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size_10">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_14"
+                            android:text="@string/my_balance"
+                            android:textColor="@color/white_50"
+                            android:fontFamily="@font/opensans_regular"/>
+                    <TextView
+                            android:id="@+id/balance_txt"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="24sp"
+                            android:text="0 EXS"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_bold"/>
+                    <TextView
+                            android:id="@+id/usd_txt"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_12"
+                            android:text="0.00 USD"
+                            android:textColor="@color/white_50"
+                            android:fontFamily="@font/opensans_regular"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_white_corner"
+                    android:layout_margin="@dimen/size_05"
+                    android:padding="@dimen/size_15">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size_10"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_14"
+                            android:text="User ID"
+                            android:textColor="@color/white_50"
+                            android:fontFamily="@font/opensans_regular"/>
+                    <TextView
+                            android:id="@+id/user_id"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_16"
+                            tools:text="1eac1077"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_10"
+                            android:text="Freewallet users can instantly send you\nEXS using your User ID."
+                            android:textAlignment="center"
+                            android:textColor="@color/white_50"
+                            android:fontFamily="@font/opensans_regular"/>
+                </LinearLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/white_50"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/size_10"
+                        android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_14"
+                            android:text="My Deposit EXS Address"
+                            android:textColor="@color/white_50"
+                            android:padding="@dimen/size_05"
+                            android:fontFamily="@font/opensans_regular"/>
+                    <TextView
+                            android:id="@+id/copy_clipboard"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_16"
+                            android:layout_marginStart="@dimen/size_10"
+                            android:layout_marginEnd="@dimen/size_10"
+                            tools:text="8746a1f4sd5fafadsf451321684afasfasfa48435131843213214981"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_bold"/>
+                    <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_margin="@dimen/size_10"
+                            app:srcCompat="@drawable/ic_qr_code"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/size_05"
+                            android:layout_marginStart="@dimen/size_15"
+                            android:layout_marginEnd="@dimen/size_15"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/size_05"
+                                android:paddingStart="@dimen/size_15"
+                                android:paddingEnd="@dimen/size_15"
+                                android:paddingTop="@dimen/size_10"
+                                android:paddingBottom="@dimen/size_10"
+                                android:background="@drawable/bg_white_corner"
+                                android:text="Generate new"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textSize="@dimen/text_12"/>
+                        <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/size_05"
+                                android:paddingStart="@dimen/size_15"
+                                android:paddingEnd="@dimen/size_15"
+                                android:paddingTop="@dimen/size_10"
+                                android:paddingBottom="@dimen/size_10"
+                                android:background="@drawable/bg_white_corner"
+                                android:text="Show all"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textSize="@dimen/text_12"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:id="@+id/buy_with_credit_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_red_corner"
+                            android:padding="@dimen/size_10"
+                            android:layout_margin="@dimen/size_10"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_credit_card_white"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/size_05"
+                            android:text="Buy EXS with credit card"
+                            android:textSize="@dimen/text_14"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/opensans_bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

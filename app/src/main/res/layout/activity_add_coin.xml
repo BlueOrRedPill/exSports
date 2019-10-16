@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/coin_btn"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:paddingStart="@dimen/size_10"
+                      android:paddingEnd="@dimen/size_10">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_margin="@dimen/size_05"
+                          android:background="@drawable/bg_white_corner">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical|end">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="100"
+                              android:gravity="center"
+                              android:layout_margin="@dimen/size_05"
+                              android:drawableStart="@drawable/ic_excoin"
+                              android:drawablePadding="@dimen/size_05"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_bold"
+                              android:textSize="18sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="BUY FOR THB 35.00"
+                              android:gravity="center"
+                              android:paddingStart="@dimen/size_15"
+                              android:paddingEnd="@dimen/size_15"
+                              android:paddingTop="@dimen/size_10"
+                              android:paddingBottom="@dimen/size_10"
+                              android:background="@color/white_30"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:layout_margin="@dimen/size_15"
+                           android:src="@drawable/img_buy_coin1"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_margin="@dimen/size_05"
+                          android:background="@drawable/bg_white_corner">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical|end">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="500"
+                              android:gravity="center"
+                              android:layout_margin="@dimen/size_05"
+                              android:drawableStart="@drawable/ic_excoin"
+                              android:drawablePadding="@dimen/size_05"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_bold"
+                              android:textSize="18sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="BUY FOR THB 180.00"
+                              android:gravity="center"
+                              android:paddingStart="@dimen/size_15"
+                              android:paddingEnd="@dimen/size_15"
+                              android:paddingTop="@dimen/size_10"
+                              android:paddingBottom="@dimen/size_10"
+                              android:background="@color/white_30"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:layout_margin="@dimen/size_15"
+                           android:src="@drawable/img_buy_coin2"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_margin="@dimen/size_05"
+                          android:background="@drawable/bg_white_corner">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical|end">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="1200"
+                              android:gravity="center"
+                              android:layout_margin="@dimen/size_05"
+                              android:drawableStart="@drawable/ic_excoin"
+                              android:drawablePadding="@dimen/size_05"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_bold"
+                              android:textSize="18sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="BUY FOR THB 350.00"
+                              android:gravity="center"
+                              android:paddingStart="@dimen/size_15"
+                              android:paddingEnd="@dimen/size_15"
+                              android:paddingTop="@dimen/size_10"
+                              android:paddingBottom="@dimen/size_10"
+                              android:background="@color/white_30"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:layout_margin="@dimen/size_15"
+                           android:src="@drawable/img_buy_coin3"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_margin="@dimen/size_05"
+                          android:background="@drawable/bg_white_corner">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical|end">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="3000"
+                              android:gravity="center"
+                              android:layout_margin="@dimen/size_05"
+                              android:drawableStart="@drawable/ic_excoin"
+                              android:drawablePadding="@dimen/size_05"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_bold"
+                              android:textSize="18sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="BUY FOR THB 800.00"
+                              android:gravity="center"
+                              android:paddingStart="@dimen/size_15"
+                              android:paddingEnd="@dimen/size_15"
+                              android:paddingTop="@dimen/size_10"
+                              android:paddingBottom="@dimen/size_10"
+                              android:background="@color/white_30"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:layout_margin="@dimen/size_15"
+                           android:src="@drawable/img_buy_coin4"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_margin="@dimen/size_05"
+                          android:background="@drawable/bg_white_corner">
+
+                <LinearLayout android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:orientation="vertical"
+                              android:layout_gravity="center"
+                              android:gravity="center_vertical|end">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="6000"
+                              android:gravity="center"
+                              android:layout_margin="@dimen/size_05"
+                              android:drawableStart="@drawable/ic_excoin"
+                              android:drawablePadding="@dimen/size_05"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_bold"
+                              android:textSize="18sp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:text="BUY FOR THB 1500.00"
+                              android:gravity="center"
+                              android:paddingStart="@dimen/size_15"
+                              android:paddingEnd="@dimen/size_15"
+                              android:paddingTop="@dimen/size_10"
+                              android:paddingBottom="@dimen/size_10"
+                              android:background="@color/white_30"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="12sp"/>
+
+                </LinearLayout>
+                <ImageView android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:layout_margin="@dimen/size_15"
+                           android:src="@drawable/img_buy_coin5"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                         android:background="@drawable/bg_white_corner"
+                         android:layout_marginTop="@dimen/size_05"
+                         android:layout_marginBottom="@dimen/size_05"
+                         android:layout_marginStart="@dimen/size_10"
+                         android:layout_marginEnd="@dimen/size_10">
+                <include layout="@layout/layout_header_profile"/>
+            </FrameLayout>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginBottom="@dimen/size_05"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_marginEnd="@dimen/size_10"
+                    app:cardCornerRadius="@dimen/size_10"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardPreventCornerOverlap="true">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ex_img_home_cover"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginBottom="@dimen/size_05"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_marginEnd="@dimen/size_10"
+                    android:background="@drawable/bg_white_corner"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/size_10"
+                        android:gravity="center">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_weight="1"
+                                  android:padding="@dimen/size_05">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="Leader board"
+                                  android:textColor="@android:color/white"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:textSize="@dimen/text_16"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="Where tour rank vs everyone else"
+                                  android:textColor="@android:color/darker_gray"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:paddingStart="@dimen/size_10"
+                                  android:paddingEnd="@dimen/size_10"
+                                  android:background="#51000000"
+                                  android:paddingTop="@dimen/size_05"
+                                  android:paddingBottom="@dimen/size_05">
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="@dimen/size_05"
+                                  android:text="RANK"
+                                  android:textColor="@android:color/darker_gray"
+                                  android:textSize="@dimen/text_10"
+                                  android:fontFamily="@font/opensans_regular"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="2"
+                                  android:padding="@dimen/size_05"
+                                  android:text="USER"
+                                  android:textColor="@android:color/darker_gray"
+                                  android:textSize="@dimen/text_10"
+                                  android:fontFamily="@font/opensans_regular"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="@dimen/size_05"
+                                  android:text="ITEMS"
+                                  android:textColor="@android:color/darker_gray"
+                                  android:textSize="@dimen/text_10"
+                                  android:fontFamily="@font/opensans_regular"/>
+                        <TextView android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:padding="@dimen/size_05"
+                                  android:text="SCORE"
+                                  android:textColor="@android:color/darker_gray"
+                                  android:textSize="@dimen/text_10"
+                                  android:fontFamily="@font/opensans_regular"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"/>
+
+                    <TextView
+                            android:id="@+id/leaderboard_btn"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/size_10"
+                            android:paddingBottom="@dimen/size_10"
+                            android:paddingStart="@dimen/size_15"
+                            android:paddingEnd="@dimen/size_15"
+                            android:layout_margin="@dimen/size_10"
+                            android:background="@drawable/bg_white_corner"
+                            android:text="VIEW LEADERBOARD"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginBottom="@dimen/size_05"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_marginEnd="@dimen/size_10"
+                    android:padding="@dimen/size_10"
+                    android:background="@drawable/bg_white_corner"
+                    android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:padding="@dimen/size_05">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Promotions"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="@dimen/text_16"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="The best deals from EX Sports"
+                              android:textColor="@android:color/darker_gray"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="10sp"/>
+
+                </LinearLayout>
+                <HorizontalScrollView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+                        <ImageView android:layout_width="250dp" android:layout_height="wrap_content"
+                                   android:src="@drawable/promotion_1"
+                                   android:layout_margin="@dimen/size_05"
+                                   android:scaleType="fitCenter"
+                                   android:adjustViewBounds="true"/>
+                        <ImageView android:layout_width="250dp" android:layout_height="wrap_content"
+                                   android:src="@drawable/promotion_2"
+                                   android:layout_margin="@dimen/size_05"
+                                   android:scaleType="fitCenter"
+                                   android:adjustViewBounds="true"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginBottom="@dimen/size_05"
+                    android:layout_marginStart="@dimen/size_10"
+                    android:layout_marginEnd="@dimen/size_10"
+                    android:padding="@dimen/size_10"
+                    android:background="@drawable/bg_white_corner"
+                    android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_weight="1"
+                              android:padding="@dimen/size_05">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="New Arrivals"
+                              android:textColor="@android:color/white"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="@dimen/text_16"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="Available on Market"
+                              android:textColor="@android:color/darker_gray"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textSize="10sp"/>
+
+                </LinearLayout>
+                <HorizontalScrollView android:layout_width="match_parent"
+                                      android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:id="@+id/new_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal">
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp">
+
+    <TextView
+            android:id="@+id/card_info_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Buakaw Banchamek"
+            android:textSize="16sp"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@android:color/white"/>
+
+    <TextView
+            android:id="@+id/card_info_id"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Card ID : 1930100001"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:id="@+id/card_info_sport"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Sport : Muaythai"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:id="@+id/card_info_event"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Event : Elite Flight Night"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:id="@+id/card_info_country"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Country : Thailand"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@android:color/white"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="@dimen/size_10"
+                  android:paddingBottom="@dimen/size_10">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_regular"
+                          android:text="Fights"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="end"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_bold"
+                          android:text="450"/>
+
+            </LinearLayout>
+            <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:progress="100"
+                         android:indeterminate="false"
+                         android:max="100"
+                         android:background="@drawable/progress_line_shape"
+                         android:progressTint="#39b54a"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_regular"
+                          android:text="Win"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="end"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_bold"
+                          android:text="405"/>
+
+            </LinearLayout>
+            <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:progress="80"
+                         android:indeterminate="false"
+                         android:max="100"
+                         android:background="@drawable/progress_line_shape"
+                         android:progressTint="#39b54a"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_regular"
+                          android:text="Lose"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="end"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_bold"
+                          android:text="40"/>
+
+            </LinearLayout>
+            <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:progress="15"
+                         android:indeterminate="false"
+                         android:max="100"
+                         android:background="@drawable/progress_line_shape"
+                         android:progressTint="#39b54a"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_regular"
+                          android:text="Draw"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="end"
+                          android:textColor="@color/white_50"
+                          android:textSize="@dimen/text_14"
+                          android:fontFamily="@font/opensans_bold"
+                          android:text="5"/>
+
+            </LinearLayout>
+            <ProgressBar android:layout_width="match_parent" android:layout_height="wrap_content"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:progress="5"
+                         android:indeterminate="false"
+                         android:max="100"
+                         android:background="@drawable/progress_line_shape"
+                         android:progressTint="#39b54a"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

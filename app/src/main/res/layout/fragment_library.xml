@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="3dp"
+            app:tabTextColor="@android:color/white"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/red_indicator"
+            android:background="#1bffffff">
+
+        <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                                                  android:layout_height="0dp"
+                                                  android:text="Sports"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                                                  android:layout_height="0dp"
+                                                  android:text="ON SALE"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+                 android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <ScrollView
+                android:id="@+id/onsale_content"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout
+                    android:id="@+id/card_content"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_10">
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

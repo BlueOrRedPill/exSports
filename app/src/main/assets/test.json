@@ -1,0 +1,21 @@
+{
+   "data": {
+     "code": 1,
+     "data": [
+		{ "transactionId" : 1 },
+		{ "transactionId" : 2 },
+		{ "transactionId" : 3 },
+		{ "transactionId" : 4 },
+		{ "transactionId" : 5 },
+		{ "transactionId" : 6 },
+		{ "transactionId" : 7 },
+		{ "transactionId" : 8 },
+		{ "transactionId" : 9 },
+		{ "transactionId" : 10 }
+	 ],
+     "message": "OK"
+   },
+   "provider": "EXSportsAPI",  
+   "status": 200,  
+   "warnings": []  
+}

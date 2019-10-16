@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content"
+              android:paddingStart="@dimen/size_10"
+              android:paddingEnd="@dimen/size_10">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:background="@drawable/bg_white_corner"
+                  android:layout_marginTop="30dp"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:padding="@dimen/size_10"
+                      android:background="@drawable/bg_white_top_corner"
+                      android:gravity="center">
+            <TextView
+                    android:id="@+id/title_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Privacy Policy"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="@dimen/text_16"/>
+
+            <ImageView
+                    android:id="@+id/close_btn"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_close"
+                    android:padding="@dimen/size_05"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+        </LinearLayout>
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView
+                        android:id="@+id/text_content"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_12"
+                        android:textColor="@color/white_50"
+                        android:padding="@dimen/size_10"/>
+
+                <LinearLayout
+                        android:id="@+id/change_password_content"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:padding="@dimen/size_20">
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textColor="@android:color/white"
+                              android:background="@drawable/bg_white_corner"
+                              android:drawableStart="@drawable/ic_lock"
+                              android:drawablePadding="@dimen/size_10"
+                              android:layout_margin="@dimen/size_05"
+                              android:padding="@dimen/size_15"
+                              android:textSize="@dimen/text_14"
+                              android:hint="Old Password"
+                              android:textColorHint="@color/white_50"/>
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:fontFamily="@font/opensans_regular"
+                              android:textColor="@android:color/white"
+                              android:background="@drawable/bg_white_corner"
+                              android:drawableStart="@drawable/ic_lock"
+                              android:drawablePadding="@dimen/size_10"
+                              android:layout_margin="@dimen/size_05"
+                              android:padding="@dimen/size_15"
+                              android:textSize="@dimen/text_14"
+                              android:hint="New Password"
+                              android:textColorHint="@color/white_50"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:padding="@dimen/size_10"
+                              android:gravity="center"
+                              android:text="More than 6 characters - must contain at least 1 number"
+                              android:textSize="@dimen/text_12"
+                              android:textColor="@color/white_50"/>
+                    <LinearLayout
+                            android:id="@+id/confirm_btn"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@drawable/bg_red_corner"
+                            android:padding="@dimen/size_10"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:gravity="center">
+                        <TextView
+                                android:id="@+id/confirm_txt"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="CHANGE PASSWORD"
+                                android:textSize="@dimen/text_14"
+                                android:padding="@dimen/size_05"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/opensans_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

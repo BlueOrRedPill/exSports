@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="180dp">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+               android:src="@drawable/img_blog_under"
+               android:scaleType="fitCenter"
+               android:adjustViewBounds="true"
+               android:layout_gravity="bottom"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="@dimen/size_05">
+
+        <RelativeLayout
+                android:id="@+id/container_1"
+                android:alpha="0.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_05"
+                android:layout_weight="1">
+        <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+            <TextView
+                    android:id="@+id/count_1"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                android:text="X 15"
+                    android:background="@color/red_indicator"
+                    android:paddingStart="@dimen/size_05"
+                    android:paddingEnd="@dimen/size_05"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginEnd="@dimen/size_05"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="8sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/container_2"
+                android:layout_width="0dp"
+                android:alpha="0.3"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_05"
+                android:layout_weight="1">
+            <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            <TextView
+                    android:id="@+id/count_2"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="X 15"
+                    android:background="@color/red_indicator"
+                    android:paddingStart="@dimen/size_05"
+                    android:paddingEnd="@dimen/size_05"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginEnd="@dimen/size_05"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="8sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/container_3"
+                android:alpha="0.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_05"
+                android:layout_weight="1">
+            <ImageView
+                    android:id="@+id/image_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            <TextView
+                    android:id="@+id/count_3"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="X 15"
+                    android:background="@color/red_indicator"
+                    android:paddingStart="@dimen/size_05"
+                    android:paddingEnd="@dimen/size_05"
+                    android:layout_marginTop="@dimen/size_05"
+                    android:layout_marginEnd="@dimen/size_05"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textSize="8sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

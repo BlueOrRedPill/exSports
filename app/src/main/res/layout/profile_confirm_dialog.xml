@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center">
+    <androidx.cardview.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="false"
+            app:cardPreventCornerOverlap="true">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                          android:orientation="vertical"
+                          android:layout_gravity="center"
+                          android:layout_weight="1"
+                          android:background="@drawable/bg_card"
+                          android:gravity="center">
+                <ImageView
+                        android:id="@+id/img_card_buy"
+                        android:layout_width="match_parent" android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:layout_margin="@dimen/size_10"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:paddingBottom="20dp"
+                              android:paddingStart="@dimen/size_10"
+                              android:paddingEnd="@dimen/size_10"
+                              android:gravity="center">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout
+                                android:id="@+id/price_content"
+                                android:visibility="visible"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical">
+                            <ImageView android:layout_width="20dp" android:layout_height="20dp"
+                                       android:scaleType="fitCenter"
+                                       android:adjustViewBounds="true"
+                                       android:src="@drawable/ic_excoin"/>
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_weight="1"
+                                      android:layout_height="wrap_content"
+                                      android:singleLine="true"
+                                      android:text=" 10 EOS"
+                                      android:textColor="@android:color/white"
+                                      android:textSize="14sp"/>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:gravity="center_vertical">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_weight="1"
+                                  android:layout_height="wrap_content"
+                                  android:text="Owner : nfttestuser1"
+                                  android:singleLine="true"
+                                  android:textColor="@android:color/white"
+                                  android:textSize="10sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout android:layout_width="match_parent" android:layout_height="1px"
+                         android:background="@color/line_color"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:padding="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Do you really want to buy it ?"
+                          android:textColor="@android:color/white"
+                          android:textSize="16sp"
+                          android:textStyle="bold"
+                          android:padding="@dimen/size_10"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:padding="10dp"
+                          android:text="10 EOS will be sent to nfttestuser1"
+                          android:textColor="@android:color/white"
+                          android:textSize="14sp"/>
+
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="1px"
+                         android:background="@color/line_color"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="CANCEL"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+                <FrameLayout android:layout_width="1px" android:layout_height="match_parent"
+                             android:background="@color/line_color"/>
+                <TextView
+                        android:id="@+id/confirm_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="CONFIRM"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

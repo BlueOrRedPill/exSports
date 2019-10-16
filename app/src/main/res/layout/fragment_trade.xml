@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="3dp"
+            app:tabTextColor="@android:color/white"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/red_indicator"
+            android:background="@color/white_30">
+
+        <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="TRADE CENTER"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="MY TRADE"/>
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_05"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10"
+            android:background="@drawable/bg_white_alpha_corner">
+        <AutoCompleteTextView
+                android:id="@+id/search_auto_complete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/size_10"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_search_white"
+                android:textSize="@dimen/text_14"
+                android:textColor="@android:color/white"
+                android:hint="Search"
+                android:textColorHint="@color/white_50" />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size_10"
+                android:background="@drawable/bg_white_alpha_corner_right"
+                android:src="@drawable/ic_filter_white"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <LinearLayout
+                android:id="@+id/header_content"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/size_15"
+                android:paddingEnd="@dimen/size_15">
+            <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/size_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ITEMS IN"
+                        android:textSize="@dimen/text_14"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/white_50"/>
+                <ImageView android:layout_width="18dp" android:layout_height="18dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="2dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/size_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|end">
+                <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ITEMS OUT"
+                        android:textSize="@dimen/text_14"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textColor="@color/white_50"/>
+                <ImageView android:layout_width="18dp" android:layout_height="18dp"
+                        android:src="@drawable/ic_arrow_up"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            <LinearLayout
+                    android:id="@+id/empty_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:src="@drawable/img_send_to"
+                        android:layout_margin="@dimen/size_05"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:padding="@dimen/size_05"
+                        android:textColor="@android:color/white"
+                        android:text="Search Card to Trade"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textSize="@dimen/text_16"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:padding="@dimen/size_05"
+                        android:gravity="center"
+                        android:textColor="@color/white_50"
+                        android:text="Use the search bar above\nto find available\nEX Sport among your network"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textSize="@dimen/text_12"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size_05"
+                        android:src="@drawable/img_recieve_form"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/new_btn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/red_indicator"
+            android:padding="@dimen/size_10"
+            android:gravity="center">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="NEW TRADE"
+                android:textSize="@dimen/text_14"
+                android:padding="@dimen/size_05"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/opensans_bold"/>
+    </LinearLayout>
+
+</LinearLayout>

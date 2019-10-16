@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="2dp"
+             android:background="#111111">
+    <ImageView
+            android:id="@+id/cover_img"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ex_library_boxing"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_alignTop="@+id/cover_img"
+                  android:layout_alignBottom="@+id/cover_img"
+                  android:layout_alignStart="@+id/cover_img"
+                  android:layout_alignEnd="@+id/cover_img"
+                  android:padding="@dimen/size_10"
+                  android:gravity="center"
+                  android:background="#33000000">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:padding="@dimen/size_15"
+                      android:gravity="center_vertical">
+            <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="[NAME]"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_16"
+                    android:fontFamily="@font/opensans_bold"/>
+            <TextView
+                    android:id="@+id/percent_all_txt"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0/0 complete"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_10"
+                    android:fontFamily="@font/opensans_regular"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar
+                    android:id="@+id/percent_progress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/circular_progress"
+                    android:background="@drawable/circle_shape"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="65" />
+            <TextView
+                    android:id="@+id/current_percent_txt"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:text="20 %"
+                    android:textSize="@dimen/text_12"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   app:srcCompat="@drawable/ic_navigate_next"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_05"
+                    android:background="@drawable/bg_white_corner"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_white_top_corner"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size_20">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="TRANSFER"
+                            android:textColor="@color/white_50"
+                            android:textSize="@dimen/text_14" />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size_05"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/size_10">
+
+                        <TextView
+                                android:id="@+id/amount_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:gravity="top"
+                                android:text="0 EXS"
+                                android:textColor="@android:color/white"
+                                android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="Network Fee:"
+                                android:textColor="@color/white_50"
+                                android:textSize="@dimen/text_12" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:text="FREE"
+                                android:textColor="@color/white_50"
+                                android:textSize="@dimen/text_12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="Total amount:"
+                                android:textColor="@color/white_50"
+                                android:textSize="@dimen/text_12" />
+
+                        <TextView
+                                android:id="@+id/total_amount_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:text="0 EXS"
+                                android:textColor="@color/white_50"
+                                android:textSize="@dimen/text_12" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/size_20">
+
+                    <LinearLayout
+                            android:id="@+id/confirm_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/size_15">
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text="ADD COMMENT"
+                                android:textColor="@color/white_50"
+                                android:textSize="@dimen/text_14" />
+
+                        <EditText
+                                android:id="@+id/comment_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/opensans_regular"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_14" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="@dimen/size_15"
+                                android:background="@color/white_50" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:id="@+id/confirm_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_20"
+                            android:layout_marginBottom="@dimen/size_20"
+                            android:background="@drawable/bg_red_corner"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/size_10">
+
+                        <TextView
+                                android:id="@+id/confirm_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_bold"
+                                android:padding="@dimen/size_05"
+                                android:text="CONTINUE"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/text_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/content_loading"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="gone" />
+</FrameLayout>

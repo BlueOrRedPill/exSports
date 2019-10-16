@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.android.sportnmedc"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+ext {
+    retrofitVer = '2.6.2'
+    gsonVer = '2.8.5'
+    rxandroidVer = '2.1.1'
+    rxjavaVer = '2.2.12'
+    okhttp3Ver = '4.2.1'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.fragment:fragment-ktx:1.1.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.1.0"
+    implementation 'com.github.crosswall:Android-Coverflow:release-v1.0.5'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVer}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${retrofitVer}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVer}"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:${okhttp3Ver}"
+    implementation "com.google.code.gson:gson:${gsonVer}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rxandroidVer}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxjavaVer}"
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+//    kapt "android.arch.lifecycle:compiler:1.0.0"
+//    kapt 'com.github.bumptech.glide:compiler:4.10.0'
+    kapt "android.arch.lifecycle:compiler:1.0.0"
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+
+
+    implementation 'com.orhanobut:logger:2.2.0' // Test log library
+    
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}

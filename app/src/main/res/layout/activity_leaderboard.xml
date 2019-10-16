@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_content">
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+            android:id="@+id/home_content"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner"
+            android:layout_marginStart="@dimen/size_10"
+            android:layout_marginEnd="@dimen/size_10">
+        <include layout="@layout/layout_header_profile"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:padding="@dimen/size_10">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:background="#1bffffff"
+                          android:padding="@dimen/size_10"
+                          android:gravity="center">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="All Sports"
+                          android:textColor="@android:color/darker_gray"
+                          android:fontFamily="@font/opensans_regular"
+                          android:textSize="@dimen/text_14"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           app:srcCompat="@drawable/ic_navigate_next"
+                           android:tint="@android:color/darker_gray"
+                           android:scaleType="fitCenter"
+                           android:adjustViewBounds="true"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:paddingStart="@dimen/size_10"
+                          android:paddingEnd="@dimen/size_10"
+                          android:paddingTop="@dimen/size_05"
+                          android:paddingBottom="@dimen/size_05"
+                          android:background="#51000000">
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:padding="@dimen/size_05"
+                          android:text="RANK"
+                          android:textColor="@android:color/darker_gray"
+                          android:textSize="@dimen/text_10"
+                          android:fontFamily="@font/opensans_regular"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2"
+                          android:padding="@dimen/size_05"
+                          android:text="USER"
+                          android:textColor="@android:color/darker_gray"
+                          android:textSize="@dimen/text_10"
+                          android:fontFamily="@font/opensans_regular"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:padding="@dimen/size_05"
+                          android:text="ITEMS"
+                          android:textColor="@android:color/darker_gray"
+                          android:textSize="@dimen/text_10"
+                          android:fontFamily="@font/opensans_regular"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:padding="@dimen/size_05"
+                          android:text="SCORE"
+                          android:textColor="@android:color/darker_gray"
+                          android:textSize="@dimen/text_10"
+                          android:fontFamily="@font/opensans_regular"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/bg_content"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/size_10"
+            android:paddingEnd="@dimen/size_10"
+            android:paddingTop="@dimen/size_10"
+            android:paddingBottom="@dimen/size_10"
+            android:background="@color/red_indicator"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/current_rank_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/size_05"
+                android:text="RANK"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/text_10"
+                android:fontFamily="@font/opensans_regular"/>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="2"
+                      android:padding="@dimen/size_05"
+                      android:orientation="horizontal"
+                      android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/current_profile_image"
+                    android:layout_width="30dp" android:layout_height="30dp"
+                    android:src="@drawable/ex_profile_image_list"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+            <TextView
+                    android:id="@+id/current_name_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/size_05"
+                    android:paddingEnd="@dimen/size_05"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:text="USER"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_10"
+                    android:fontFamily="@font/opensans_bold"/>
+        </LinearLayout>
+        <TextView
+                android:id="@+id/current_item_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/size_05"
+                android:text="ITEMS"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/text_10"
+                android:fontFamily="@font/opensans_regular"/>
+        <TextView
+                android:id="@+id/current_score_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/size_05"
+                android:text="SCORE"
+                android:textColor="@color/white_50"
+                android:textSize="@dimen/text_10"
+                android:fontFamily="@font/opensans_regular"/>
+    </LinearLayout>
+</LinearLayout>
